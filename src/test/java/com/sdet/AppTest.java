@@ -1,0 +1,25 @@
+package com.sdet;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class AppTest {
+
+	@Test
+	public void testlogin1() {
+		App myapp=new App();
+		Assert.assertEquals(0,myapp.userLogin("abc", "abc123"));
+		
+	}
+	
+	@Test
+	public void testlogin22() {
+		int result = 4 + 4;
+		Assert.assertEquals(8,result);
+		
+	}
+	
+	
+	
+	
+}
